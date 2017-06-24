@@ -1,0 +1,29 @@
+.billboard__description {
+
+    position: relative;
+    color: #fff;
+    font-family: aleo;
+    font-size: 16px;
+  &:before, &:after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    top: 49%;
+    height: 1px;
+    background: #fff;
+  }
+  &:before {
+      left: -67px;
+    }
+    &:after {
+      right: -67px;
+    }
+  @media(max-width: 768px){
+
+
+    &:after,
+    &:before
+    { display:none}
+
+  }
+}

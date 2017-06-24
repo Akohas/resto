@@ -1,0 +1,15 @@
+.nav__item {
+
+  display: inline-block;
+  margin-right: 53px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media(max-width: 768px) {
+
+    display: block;
+    padding: 15px;
+  }
+
+}

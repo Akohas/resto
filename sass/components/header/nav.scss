@@ -1,0 +1,29 @@
+.nav {
+  float: right;
+  padding-top: 10px;
+  font-family: aleo;
+  color: $font-color;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+  @media(max-width: 768px) {
+    position: fixed;
+    right: -100%;
+    top: 86px;
+    z-index: 100;
+    box-shadow: 0px 4px 20px #828282;
+    background: #fff;
+    border-radius: 10px 0px 0px 10px;
+    padding: 30px;
+    transition: 0.3s;
+
+    &_active {
+      right: 0px;
+    }
+  }
+}
+@import 'nav__item';
+
+

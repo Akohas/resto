@@ -1,0 +1,7 @@
+.menu-item__price {
+  padding-left: 40px;
+  @media(max-width: 768px) {
+    padding: 0;
+  }
+
+}

@@ -1,0 +1,9 @@
+.menu-item__line {
+  border-top: 1px solid $light-grey;
+  flex-grow: 3;
+  @media(max-width: 768px) {
+
+      display: none;
+
+  }
+  }

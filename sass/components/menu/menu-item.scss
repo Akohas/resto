@@ -1,0 +1,35 @@
+.menu-item {
+  width: calc(50% - 56px);
+  display: inline-block;
+  margin-top: 60px;
+  display: inline-flex;
+  color: $dark-grey-color;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+ &:nth-child(2n) {
+    margin-left: 110px;
+  }
+
+&:nth-child(-n + 2 ) {
+    margin-top: 0;
+  }
+
+  @media(max-width: 768px) {
+
+      width: 100%;
+      margin-bottom: 30px;
+      margin-top: 0;
+
+    &:nth-child(2n) {
+      margin-left: 0;
+    }
+  }
+}
+
+@import 'menu-item__description';
+@import 'menu-item__line';
+@import 'menu-item__price';
+@import 'menu-item__title';

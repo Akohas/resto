@@ -1,0 +1,13 @@
+.header {
+
+  padding-top: 32px;
+  padding-bottom: 22px;
+&:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+}
+
+@import 'logo';
+@import 'nav';

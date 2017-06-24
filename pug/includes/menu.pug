@@ -1,0 +1,20 @@
+mixin menu-item(price,title,  description)
+	a(href="#").menu-item.link_unstyle
+		span.menu-item__title= title
+		span.menu-item__line
+		span.menu-item__price= "$" + price
+		.menu-item__description= description
+
+
+.menu
+	.flag The Menu
+	.container
+		+menu-item('40','Voluptate cillum fugiat.',  'Cheese, tomato, mushrooms, onions' )
+		+menu-item("40","Voluptate cillum fugiat.", "Cheese, tomato, mushrooms, onions" )
+		+menu-item("20","Donec sodales magna.","Cheese, tomato, mushrooms, onions")
+		+menu-item("50","Saugue velit cursus.","Pineapple, Minced Beef, Cheese." )
+		+menu-item("53", "Saugue velit cursus.", "Cheese, tomato, mushrooms, onions")
+		+menu-item("49", "Arcu pede enim justo cillum fugiat.", "Cheese, tomato, mushrooms, onions" )
+		+menu-item("20","Donec sodales magna.","Cheese, tomato, mushrooms, onions")
+		+menu-item('40','Voluptate cillum fugiat.',  'Cheese, tomato, mushrooms, onions' )
+		button.button load more
