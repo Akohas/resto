@@ -1,0 +1,22 @@
+.title{
+  color: $font-color;
+font-family: Aleo;
+display: inline-block;
+font-size: 20px;
+font-weight: 700;
+line-height: 1;
+text-transform: uppercase;
+margin-bottom: 80px;
+position: relative;
+padding-right: 20px;
+&:after{
+
+	content: '';
+	width: 200px;
+	height: 1px;
+	background: $light-grey;
+	position: absolute;
+	top: 49%;
+	left: 100%;
+}
+}

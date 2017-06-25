@@ -1,0 +1,19 @@
+.slider-item{
+	    display: inline-block;
+    width: 230px;
+    margin-right: 60px;
+	&__image{
+	margin-bottom: 20px;
+}
+&__title{
+	    margin-bottom: 10px;
+	float: left;
+}
+&__price{
+	float: right;
+}
+&__stars{
+
+	    clear: both;
+}
+}

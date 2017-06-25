@@ -37,7 +37,7 @@ const paths = {
     outputPath: './public/html'
   },
   images: {
-    inputPath: './source_images',
+    inputPath: './source_images/',
     inputSvg: './source_images/svg',
     outputPath: './public/images'
   }

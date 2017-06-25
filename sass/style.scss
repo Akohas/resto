@@ -3,8 +3,10 @@
 @import 'variables';
 @import 'normalize';
 @import 'base';
-@import 'components/star';
 @import 'components/header/header';
 @import 'components/billboard/billboard';
 @import 'components/menu/menu';
+@import 'components/rating';
+@import 'components/title';
 @import 'components/button';
+@import 'components/slider-item';     

@@ -1,8 +1,9 @@
 .billboard__description {
-
+display: inline;
     position: relative;
     color: #fff;
     font-family: aleo;
+      max-width: 600px;
     font-size: 16px;
   &:before, &:after{
     content: '';

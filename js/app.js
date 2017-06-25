@@ -1,1 +1,3 @@
-var kekFunc = js => js += 1;
+
+var slider = require("./slider")
+
