@@ -72,6 +72,7 @@ gulp.task('del',() => {
 //start server
 gulp.task('browser-sync', ['sass','pug','bundle','img-min','svg-sprites'], () => {
   browserSync.init({
+    open: false,
     server: {
       baseDir: "./"
     }
@@ -94,7 +95,7 @@ gulp.task('browser-sync', ['sass','pug','bundle','img-min','svg-sprites'], () =>
 //style sass compile
 gulp.task('sass', () => {
 
-  gulp.src(`${paths.styles.sassPath}/*.scss`)
+  gulp.src(`${paths.styles.sassPath}/style.scss`)
       .pipe(gulpif(!production, sourcemaps.init({loadMaps: true})))
       .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(autoprefixer({
