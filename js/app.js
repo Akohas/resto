@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import { slick } from 'slick';
 
-var slider = require("./slider")
-
+$(function(){
+  $('.slider__container').slick();
+})
