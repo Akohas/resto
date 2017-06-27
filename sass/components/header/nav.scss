@@ -10,18 +10,28 @@
 
 
   @media(max-width: 768px) {
-    position: fixed;
-    right: -100%;
-    top: 86px;
+    position: absolute;
+    //right: -100%;
+    top: 55px;
     z-index: 100;
-    box-shadow: 0px 4px 20px #828282;
-    background: #fff;
-    border-radius: 10px 0px 0px 10px;
+    background: $font-color;
+    color: #fff;
+    border-radius: 0px 0px 0px 10px;
     padding: 30px;
     transition: 0.3s;
 
+
+padding: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+    padding: 30px 0;
     &_active {
-      right: 0px;
+      //right: 0px;
+      overflow: hidden;
+      padding:  30px;
+      width: 320px;
+      max-width: 100%;
     }
   }
 }

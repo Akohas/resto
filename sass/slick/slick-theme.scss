@@ -145,6 +145,9 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     margin: 0;
     width: 100%;
+    @media(max-width: 767px){
+        top: -40px;
+    }
     li {
         position: relative;
         display: inline-block;

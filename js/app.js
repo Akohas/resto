@@ -15,6 +15,13 @@ $(function(){
   $('.rating__item').on('click', function(){
   	var index = $(this).closest('.rating__item').index();
   })
+
+
+	$('.nav-icon').on('click', function(){
+		$(this).toggleClass('nav-icon_active');
+        $('.nav').toggleClass('nav_active');
+
+	})
 })
 
 

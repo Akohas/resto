@@ -1,11 +1,13 @@
 .flag {
   width: 155px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   height: 75px;
   text-align: center;
   color: #fff;
   padding-top: 23px;
   background: url('../images/menu.png') no-repeat;
   font-size: 20px;
-  margin-bottom: 81px;
+  @media(max-width: 767px){
+    margin-bottom: 30px;
+  }
 }

@@ -7,7 +7,12 @@
   display: table;
   clear: both;
 }
+  @media(max-width: 767px){
+
+    padding-top: 19px;
+    padding-bottom: 12px;
+  }
 }
 
-@import 'logo';
+
 @import 'nav';

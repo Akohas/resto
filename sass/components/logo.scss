@@ -1,0 +1,30 @@
+.logo {
+
+  font-family: 'wc_mano_negra';
+  line-height: 1;
+  font-size: 49px;
+  font-weight: 600;
+  float: left;
+  display: inline-block;
+  color: $font-color;
+  &__feature {
+    color: $red;
+    font-size: 53px;
+  }
+  @media(max-width: 767px){
+    font-size: 36px;
+    &__feature {
+      font-size: 30px;
+    }
+  }
+  &_footer {
+    margin-bottom: 35px;
+    line-height: 0;
+    color: #fff;
+    font-size: 36px;
+    float: none;
+    &__feature {
+      font-size: 30px;
+    }
+  }
+}

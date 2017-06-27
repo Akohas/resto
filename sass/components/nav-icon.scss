@@ -1,0 +1,46 @@
+.nav-icon {
+  @media(min-width: 768px){display: none}
+  float: right;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 30px;
+  height: 4px;
+  background: $font-color;
+  position:relative;
+  transition: 0.3s;
+  &:before,
+  &:after{
+    transition: 0.3s;
+    border-radius: 3px;
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: $font-color;
+  }
+  &:before{
+    top:  -10px;
+    left: 0
+  }
+  &:after{
+    bottom: -10px;
+    left: 0;
+  }
+
+  &_active{
+    &:before {
+      transform: rotate(45deg);
+      transform-origin: 7px 13px;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      transform-origin: 4px -10px;
+    }
+    background: transparent;
+  }
+
+}
+
+
+
