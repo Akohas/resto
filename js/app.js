@@ -6,7 +6,24 @@ $(function(){
   	slidesToShow: 4,
   	arrows: false,
   	dots: true,
-  	variableWidth: true,
+    infinite: false,
+  	// variableWidth: true,
+    responsive: [
+			{
+        breakpoint: 1024,
+        settings: {
+          variableWidth: false,
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 668,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+
+		]
 
   });
 
