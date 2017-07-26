@@ -1,4 +1,6 @@
 .slider {
   margin-bottom: 180px;
   @media(max-width:  767px){margin-bottom: 80px}
+  .slick-dots{z-index: -1}
 }
+@import 'slider-item';

@@ -1,4 +1,15 @@
 .billboard__container {
-  margin: auto;
+  margin: 200px auto 0;
   text-align: center;
+  @media(max-width: 1100px) {
+
+  }
+}
+
+
+@supports(margin: auto){
+.billboard__container {
+  margin: auto;
+  }
+
 }
