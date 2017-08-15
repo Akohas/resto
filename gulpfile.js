@@ -100,7 +100,8 @@ gulp.task('sass', () => {
       .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(autoprefixer({
           browsers: ['> 1%', 'last 10 versions'],
-          cascade: false
+          cascade: false,
+          grid: false
         }))
       .pipe(gulpif(!production, sourcemaps.write('.')))
       .pipe(gulp.dest(`${paths.styles.destPath}`))
